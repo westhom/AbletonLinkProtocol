@@ -35,8 +35,11 @@ Sent right before a client leaves the multicast group.
 0010   5e 6b 28 2d
 ```
 
-
-
 ## Wireshark Packet Dissector
 When capturing data with wireshark, go to Tools->Lua->Evaluate and paste in the
 provided lua script to get a basic reading of the timeline packet.
+
+Useful wireshark filter: `ip.dst == 224.76.78.75 || ip.dst == 224.0.0.22`
+
+## Help
+I only have access to two copies of Live Beta, so progress is a bit slow in figuring out the nuances of the protocol. Any help would be awesome. A single packet dump of a Link session (with at least 1 iOS client) would be useful
