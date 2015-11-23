@@ -35,6 +35,8 @@ Sent right before a client leaves the multicast group.
 0010   5e 6b 28 2d
 ```
 
+![](http://i.imgur.com/oLzkIVO.png)
+
 ## Wireshark Packet Dissector
 When capturing data with wireshark, go to Tools->Lua->Evaluate and paste in the
 provided lua script to get a basic reading of the timeline packet.
