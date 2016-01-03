@@ -13,6 +13,8 @@ port 20808. Link clients join + leave the multicast group via IGMP.
 ### Timeline packet
 Sent continuously by all connected clients.
 
+Sent by Live Beta: 
+
 ```
 0000   5f 61 73 64 70 5f 76 01 01 05 00 00 52 7b 46 27
 0010   65 45 53 3a 74 6d 6c 6e 00 00 00 18 00 00 00 00
@@ -22,11 +24,22 @@ Sent continuously by all connected clients.
 0050   fa f4
 ```
 
+Sent by iPad app:
+
+```
+0000   5f 61 73 64 70 5f 76 01 01 05 00 00 6a 5b 3e 5b
+0010   69 5c 6a 66 74 6d 6c 6e 00 00 00 18 00 00 00 00
+0020   00 2d c6 c0 00 00 00 00 2b 5b 71 6b 00 00 00 01
+0030   9d ec ea 72 73 65 73 73 00 00 00 08 6a 5b 3e 5b
+0040   69 5c 6a 66 6d 65 70 34 00 00 00 06 c0 a8 00 a2
+0050   f8 75
+```
+
 Below is the in-progress packet structure for the timeline packet. 
 The disconnect packet uses the same header but only contains the client ID.
 More information to come.
 
-![](http://i.imgur.com/sMDE8Re.png)
+![](http://i.imgur.com/O9T3A68.png)
 
 ### Disconnect Packet
 Sent right before a client leaves the multicast group.
